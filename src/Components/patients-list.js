@@ -5,7 +5,7 @@ import PatientCard from "./patient-card"
 import './card-list-styles.css'
 import SearchBox from "./SearchBox"
 
-function Patientlist() {
+const  Patientlist = () => {
 
     const [searchText, setSerachText] = useState(" ");
     const [searchResults, setSearchResults] = useState([]);
@@ -51,11 +51,13 @@ function Patientlist() {
 
         content = 
         
-            <div>     
+            <div>    
+                
                 <SearchBox placeholder='search patients'
                         //handleChange = { e => { setSerachText(e.target.value) } }
                         handleChange={handleChange}
                 />
+               
                 <div className='card-list'>
                     {
                         searchResults.map((patient) => (
@@ -69,14 +71,9 @@ function Patientlist() {
     }
 
     return (
-        <div>
-        
-        
-       
+        <div>      
         { content }
-        </div>
-
-
+        </div>   
     )
 
 

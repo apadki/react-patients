@@ -1,13 +1,14 @@
 .search {
-    -webkit-appearance: textfield;
+    -webkit-appearance: none;
     border: none;
     outline: none;
     padding: 10px;
-    width: 250px;
+    width: 150px;
     line-height: 40px;
-    margin-bottom: 20px;
-    margin-right: auto;
+    margin-bottom: 30px;
+    
+    /* margin-right: auto;
     margin-left: auto;
     box-sizing: content-box;
-    font-size: 14px;
+    font-size: 14px; */
   }
